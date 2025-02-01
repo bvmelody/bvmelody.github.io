@@ -1,0 +1,13 @@
+Linear organization is the concept of arranging a website in such a way that
+you can simply go from one website to another in a line. So you could go to web page 1 from web
+page 5 by passing through web pages 2-4. In addition if you wanted to go back to page 1 you would
+need to go back through pages 2-4.
+
+Random organization is style of not having a traditional heirarchical or linear organization to a website.
+While this may seem unorganized it an also be very deliberately designed in such a way. For example a web
+based game such as an alternate reality game may have a person go to seemingly random web pages that work
+together to form a cohesive gameplay and narrative experience.
+
+In my opinion using a linear organization for these web pages in this assignment was the best choice
+as all of the pages are strikingly familiar and understandable to the user, and it made it easy
+for customers to understand how to navigate the web page without explanatoin.
