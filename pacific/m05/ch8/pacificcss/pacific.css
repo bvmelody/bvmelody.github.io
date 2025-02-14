@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.redAsterisk {
+    color: red;
+}
+
 a:link {
     color: #5C7FA3;
 }
@@ -180,6 +184,13 @@ main {
     /* margin-left: 170px; */
 }
 
+#reshero {
+    height: 300px;
+    background-image: url(../images/ocean.jpg);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+}
+
 section {
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -198,7 +209,64 @@ section {
     display: none;
 }
 
+table {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    /* attempting to center it */
+    margin: auto;
+    width: 90%;
+}
+
+table td, th {
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+table td {
+    text-align: center;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #DFEDF8;
+}
+
+table tbody tr:hover {
+    background-color: rgb(125, 0, 125);
+    color: yellow;
+}
+
+.text {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input, textarea {
+    margin-bottom: 0.5em;
+}
+
 @media (width>= 600px) {
+    form {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 10em 1fr;
+        gap: 1em;
+    }
+
+    input[type=submit]{
+        grid-column: 2/3;
+        width: 9em;
+    }
+
+    #reshero {
+        background-size: 100% 100%;
+    }
+
     h1 {
         font-size: 2em;
         letter-spacing: .25em;
@@ -235,31 +303,6 @@ section {
         display: inline;
     }
 
-    table {
-        border: 1px solid blue;
-        border-collapse: collapse;
-        /* attempting to center it */
-        margin: auto;
-        width: 90%;
-    }
-
-    table td, th {
-        padding: 5px;
-        border: 1px solid blue;
-    }
-
-    table td {
-        text-align: center;
-    }
-
-    table tr:nth-of-type(even) {
-        background-color: #DFEDF8;
-    }
-
-    .text {
-        text-align: left;
-    }
-
     #homehero, #yurthero, #trailhero {
         background-size: 100% 100%;
     }
@@ -267,7 +310,7 @@ section {
 
 @media (width >= 1024px) {
     body {
-        background-color: linear-gradient(to bottom, #FFFFFF 20%, #90c7e3 60%, #FFFFFF 100%);
+        background-image: linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
         background-repeat: no-repeat;
     }
 
