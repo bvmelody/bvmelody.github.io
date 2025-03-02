@@ -24,8 +24,8 @@ body {
     background-color: floralwhite;
     color: lightseagreen;
     font-family: 'Courier New', Courier, monospace;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 header {
@@ -37,8 +37,8 @@ header {
 }
 
 h1 {
-    font-size: 1.75em;
-    text-align: left;
+    font-size: 2em;
+    text-align: center;
 }
 
 nav {
@@ -60,4 +60,11 @@ nav ul {
 nav li {
     width: 100%;
     border-bottom: 1px solid;
+}
+
+#navhero {
+    padding: 1em;
+    color:lightseagreen;
+    font-size: 1.3em;
+    background-color: floralwhite;
 }
