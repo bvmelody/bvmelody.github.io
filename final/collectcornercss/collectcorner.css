@@ -7,14 +7,14 @@ a:visited{
 }
 
 a:hover{
-    color:blueviolet;
-    background-color: yellow;
+    color: #33272a;
+    background-color: lightpink;
     font-size: 1.2em;
 
 }
 
 #wrapper {
-    background-color: papayawhip;
+    background-color: #faeee7;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,7 +22,7 @@ a:hover{
 body {
     margin: 0;
     background-color: floralwhite;
-    color: lightseagreen;
+    color: #33272a;
     font-family: 'Courier New', Courier, monospace;
     padding-left: 1.5em;
     padding-right: 1.5em;
@@ -31,7 +31,7 @@ body {
 header {
     padding: 1em;
     background-color: floralwhite;
-    color: deeppink;
+    color: #33272a;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
@@ -41,10 +41,15 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    background-color: #ff8ba7;
+    text-align: center;
+}
+
 nav {
     font-size: 1em;
     text-align: center;
-    background-color: pink;
+    background-color: #ff8ba7;
     color: black;
 }
 
@@ -55,6 +60,7 @@ nav ul {
     flex-direction: row;
     margin: 0;
     list-style: none;
+    justify-content: space-evenly;
 }
 
 nav li {
@@ -62,9 +68,60 @@ nav li {
     border-bottom: 1px solid;
 }
 
+main {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    background-color: #fffffe;
+}
+
 #navhero {
     padding: 1em;
     color:lightseagreen;
     font-size: 1.3em;
     background-color: floralwhite;
+}
+
+@media (width<=600px) {
+    form {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 10em 1fr;
+        gap: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: inline;
+    }
+}
+
+@media (width >= 720px) {
+    #wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    #flow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
