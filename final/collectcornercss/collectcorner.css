@@ -39,10 +39,18 @@ header {
 h1 {
     font-size: 2em;
     text-align: center;
+    text-shadow: 2px 2px 2px #ff8ba7;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: left;
+    text-shadow: 1px 1px 2px #ff8ba7;
 }
 
 h3 {
-    background-color: #ff8ba7;
+    font-size: 1em;
+    background-color: #faeee7;
     text-align: center;
 }
 
@@ -80,6 +88,17 @@ main {
     color:lightseagreen;
     font-size: 1.3em;
     background-color: floralwhite;
+}
+
+.category {
+    color:#ff8ba7;
+    text-shadow:#33272a;
+    font-weight: bold;
+}
+
+table, tr, th {
+    border: 1px solid;
+    background-color: #faeee7;
 }
 
 @media (width<=600px) {
