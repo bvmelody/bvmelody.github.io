@@ -22,8 +22,6 @@
     </nav>
 
     <div id="wrapper">
-        
-    </div>
 
     <main>
         <h1>Pins!</h1>
@@ -33,6 +31,60 @@
             is incredibly easy to find pins you would like to display! But there are a few things you should keep in mind! Mainly regarding Specific
             categories of pins that might have some unique qualities that may make them more complex and/or difficult to collect.
         </p>
+        <h2>Hard Enamel vs Soft Enamel</h2>
+        <p>Likely the most common qualifier you will see when pin collecting is whether a pin is hard or soft enamel.
+            Now, what does this mean? Well it is rather simple and easy to tell the differenc between the two!
+        </p>
+        <table>
+            <colgroup>
+                <col span="0" style="text-align: center;">
+                <col span="1" style="text-align: center;">
+            </colgroup>
+            <tr>
+                <th>Soft Enamel</th>
+                <th>Hard Enamel</th>
+            </tr>
+            <tr>
+                <td>Raised metal Edges</td>
+                <td>Flat surface</td>
+            </tr>
+            <tr>
+                <td>Wide variety of finishes</td>
+                <td>Limited variety of finishes</td>
+            </tr>
+            <tr>
+                <td>Less durable and more prone to scratches</td>
+                <td>More durable and less prone to scratches</td>
+            </tr>
+            <tr>
+                <td>Inexpensive and easier to produce</td>
+                <td>More expensive and more involved production process</td>
+            </tr>
+            <tr>
+                <td>Able to accomodate more detail</td>
+                <td>Unable to support finer details</td>
+            </tr>
+        </table>
+        <button type="button" class="collapsible">Lapel Pins</button>
+        <div class="content">
+            <p>A very common form of pin that is often sold in singles in stores. Named for the fact they
+                are designed to be worn on a jacket lapel. Though it doesn't have to be. For instance I often
+                wear a pin on my shirt collar or pocket. This category actually encompasses most pins as even
+                those that I would never consider wearing on a lapel, will be called "lapel pins" on the packaging.
+                This isn't a knock on them or false advertising, it's just a convenient name that most people
+                will understand.
+            </p>
+            <p>
+                It's also quite common the the United States to see
+                politicians where an American Flag pin on their suit lapel, initially started by GOP candidates
+                in the 1970 election, and would come to national attention thanks to Richard Nixon giving an
+                order to all his staff to wear a flag pin in order to show their belief in their
+                "silent majority". This trend would wane somewhat until the gulf war and 9/11 where the
+                pins returned in force. Nowadays it's difficult to find politicians regularly going with the pin
+                on the campaign trail.
+            </p>
+        </div>
+        <!--
         <h2>An Inexhaustive List of Pin Categories:</h2>
         <table>
             <tr>
@@ -91,7 +143,25 @@
                 </th>
             </tr>
         </table>
+    -->
         <h3>Lapel Pins</h3>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i< coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+        </script>
     </main>
     </div>
 </body>

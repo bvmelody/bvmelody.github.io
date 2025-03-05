@@ -101,6 +101,34 @@ table, tr, th {
     background-color: #faeee7;
 }
 
+th {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.collapsible {
+    background-color: #ff8ba7;
+    color:#33272a;
+    cursor: pointer;
+    padding: 18px;
+    width: 20%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: lightpink;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #faeee7;
+}
+
 @media (width<=600px) {
     form {
         width: 60%;
