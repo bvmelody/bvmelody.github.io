@@ -36,6 +36,20 @@
             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+
+        <h1>Show us your Pins!</h1>
+        <form method="post" action="https://formspree.io/f/mblgrowk">
+            <!-- enctype="multipart/form-data"-->
+            <label for="name"><span class="redAsterisk">*</span>Name:</label>
+            <input type="text" name="name" required id="name">
+            <label for="myEmail"><span class="redAsterisk">*</span>E-mail:</label>
+            <input type="text" name="myEmail" required id="myEmail">
+            <label for="imageUpload">Choose an image to upload:</label>
+            <input type="file" id="imageUpload" name="image" accept="image/*">
+            <label for="myComments"><span class="redAsterisk">*</span>Comments:</label>
+            <textarea rows="2" cols="20" name="myComments" id="myComments" required></textarea>
+            <input type="submit">
+        </form>
     </main>
     </div>
 </body>
