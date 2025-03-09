@@ -150,6 +150,11 @@ details:open > summary {
     width: 50%;
 }
 
+.images {
+    display: block;
+    width: 25%;
+}
+
 .collapsible {
     background-color: #ff8ba7;
     color:#33272a;
@@ -163,6 +168,14 @@ details:open > summary {
 
 .active, .collapsible:hover {
     background-color: lightpink;
+}
+
+footer {
+    padding: 1em;
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    background-color: floralwhite;
 }
 
 .content {
